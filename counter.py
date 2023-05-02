@@ -5,9 +5,30 @@ class Counter:
         else:
             self.__count = 0
 
+    # @property
+    # def count(self):
+    #     return self.__count
+
+    # def get_count(self):
+    #     return self.__count
     @property
     def count(self):
         return self.__count
+    #
+    # def set_count(self, count):
+    #     if count >= 0:
+    #         self.__count = count
+
+    @count.setter
+    def count(self, count):
+        if count >= 0:
+            self.__count = count
+    #
+    # def del_count(self):
+    #     del self.__count
+    @count.deleter
+    def count(self):
+        del self.__count
 
     def increment(self):
         self.__count += 1
