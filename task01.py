@@ -4,7 +4,6 @@ c1 = Counter()
 c2 = Counter()
 c3 = Counter(10)
 
-
 c1.increment()
 c1.increment()
 
