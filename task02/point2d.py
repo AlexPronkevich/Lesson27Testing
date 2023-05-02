@@ -3,16 +3,29 @@ class Point2D:
         self.__x = x
         self.__y = y
 
-    def get_x(self):
+    # def get_x(self):
+    #     return self.__x
+    @property
+    def x(self):
         return self.__x
 
+    # def set_x(self, x=0):
+    #     self.__x = x
+    @x.setter
     def set_x(self, x=0):
         self.__x = x
 
-    def get_y(self):
+    # def get_y(self):
+    #     return self.__y
+    @property
+    def y(self):
         return self.__y
 
-    def set_y(self, y=0):
+    # def set_y(self, y=0):
+    #     self.__y = y
+
+    @y.setter
+    def y(self, y=0):
         self.__y = y
 
     def __str__(self):
